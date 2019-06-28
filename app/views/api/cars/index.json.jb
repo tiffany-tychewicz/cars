@@ -1,4 +1,8 @@
-@cars.map do
+@cars.map do |car|
   {
-    id: car.id
+    id: car.id,
+    make: car.make,
+    model: car.model,
+    color: car.color,
+    year: car.year
   }

@@ -1,0 +1,7 @@
+{
+    id: @car.id,
+    make: @car.make,
+    model: @car.model,
+    color: @car.color,
+    year: @car.year
+  }
