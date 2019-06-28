@@ -1,0 +1,4 @@
+@cars.map do
+  {
+    id: car.id
+  }
