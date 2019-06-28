@@ -31,6 +31,9 @@ class Api::CarsController < ApplicationController
     render "show.json.jb"
   end
 
-
-
+  def destroy
+    car = Car.find_by(id: params[:id])
+    car.destroy
+    render json: {message: "Car succesfully removed"}
+  end
 end
