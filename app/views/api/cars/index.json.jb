@@ -6,3 +6,4 @@
     color: car.color,
     year: car.year
   }
+end
