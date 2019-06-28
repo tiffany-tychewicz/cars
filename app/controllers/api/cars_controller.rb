@@ -16,6 +16,11 @@ class Api::CarsController < ApplicationController
     render "show.json.jb"
   end
 
+  def show
+    @car = Car.find_by(id: params[:id])
+    render "show.jason.jb"
+  end
+
 
 
 end
