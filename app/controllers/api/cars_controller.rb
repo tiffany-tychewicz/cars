@@ -21,6 +21,16 @@ class Api::CarsController < ApplicationController
     render "show.jason.jb"
   end
 
+  def update
+    @car = Car.find_by(id: params[:id])
+    @car.make = params[:make] || @car.make
+    @car.model = params[:model] || @car.model
+    @car.color = params[:color] || @car.color
+    @car.year = params[:year] || @car.year
+    @car.save
+    render "show.json.jb"
+  end
+
 
 
 end
